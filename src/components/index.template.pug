@@ -1,0 +1,212 @@
+doctype html
+html
+  head
+    title Cabbage Patch Saloon
+
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Styles
+    link(href='css/bootstrap/bootstrap.min.css', rel='stylesheet')
+
+    link(rel='stylesheet', href='css/compiled/bootstrap-overrides.css', type='text/css')
+
+    link(rel='stylesheet', type='text/css', href='css/compiled/theme.css')
+
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+
+    link(rel='stylesheet', href='css/compiled/coming-soon.css', type='text/css', media='screen')
+
+    link(rel='stylesheet', type='text/css', href='css/lib/animate.css', media='screen, projection')
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+  body
+    .navbar.navbar-inverse.navbar-static-top(role='navigation')
+      .container
+        .navbar-header
+          a.navbar-brand(href='/')
+            img.img-rounded(src='https://pbs.twimg.com/media/CGqmk8-VIAAJBmT.jpg', alt='...', style='height: auto; width:20%')
+    // Sign In Option 1
+    #coming_soon
+      .head
+        .container
+          .col-sm-6.text
+            h4 The all new Cabbage Patch Saloon website is well underway!
+
+            p
+              | We are currently working on an awesome new site. 
+              span STAY TUNED!
+
+              br
+              |                         Please don&acute;t forget to check us out on Facebook and Twitter and subscribe to be notified.
+
+          #clock.col-sm-6.count
+            .pull-right
+              //
+                <div class="box">
+                <div class="circle">
+                <span id="weeks"></span>
+                </div>
+                <p>Weeks</p>
+                </div>
+              .box.last
+                .circle
+                  span#days
+
+                p Days
+
+              .box
+                .circle
+                  span#hours
+
+                p Hours
+
+              .box
+                .circle
+                  span#minutes
+
+                p Minutes
+
+              .box
+                .circle
+                  span#seconds
+
+                p Seconds
+
+      .email_wrapp
+        .container
+          .col-md-11.wrapp
+            p
+              strong Sign up here
+              |  to be one of the first to know when it&acute;s ready
+
+            input.form-control(type='text', placeholder='Email address...')
+
+            a.btn.send(href='#') ok
+
+      .social
+        .container
+          p Follow us
+
+          a.facebook(href='https://www.facebook.com/Cabbage-Patch-Saloon-231849847013956/')
+            span.icons.ico1
+
+            span.iconsh.ico1h
+
+          a.twitter(href='https://twitter.com/GPCabbagePatch/')
+            span.icons.ico2
+
+            span.iconsh.ico2h
+          //
+            a href="#" class="gplus">
+            <span class="icons ico3"></span>
+            <span class="iconsh ico3h"></span>
+            </a>
+            <a href="#" class="flickr">
+            <span class="icons ico4"></span>
+            <span class="iconsh ico4h"></span>
+            </a>
+            <a href="#" class="pinterest">
+            <span class="icons ico5"></span>
+            <span class="iconsh ico5h"></span>
+            </a>
+            <a href="#" class="dribble">
+            <span class="icons ico6"></span>
+            <span class="iconsh ico6h"></span>
+            </a>
+            <a href="#" class="behance">
+            <span class="icons ico7"></span>
+            <span class="iconsh ico7h"></span>
+            </a
+    // starts footer
+    footer#footer
+      .container
+        .row.info
+          .col-sm-6.residence
+            ul
+              li 15130 Mack Ave. Grosse Pointe Park
+
+              li Michigan, 48230
+
+          .col-sm-5.touch
+            ul
+              li
+                strong P.
+                |  1 817 274 2933
+
+              li
+                strong E.
+                a(href='#')  bootstrap@twitter.com
+
+        .row.credits
+          .col-md-12
+            .row.social
+              .span12
+                a.facebook(href='https://www.facebook.com/Cabbage-Patch-Saloon-231849847013956/')
+                  span.socialicons.ico1
+
+                  span.socialicons_h.ico1h
+
+                a.twitter(href='https://twitter.com/GPCabbagePatch/')
+                  span.socialicons.ico2
+
+                  span.socialicons_h.ico2h
+                //
+                  a href="#" class="gplus">
+                  <span class="socialicons ico3"></span>
+                  <span class="socialicons_h ico3h"></span>
+                  </a>
+                  <a href="#" class="flickr">
+                  <span class="socialicons ico4"></span>
+                  <span class="socialicons_h ico4h"></span>
+                  </a>
+                  <a href="#" class="pinterest">
+                  <span class="socialicons ico5"></span>
+                  <span class="socialicons_h ico5h"></span>
+                  </a>
+                  <a href="#" class="dribble">
+                  <span class="socialicons ico6"></span>
+                  <span class="socialicons_h ico6h"></span>
+                  </a>
+                  <a href="#" class="behance">
+                  <span class="socialicons ico7"></span>
+                  <span class="socialicons_h ico7h"></span>
+                  </a
+
+            .row.copyright
+              .col-md-12
+                | &copy; 2017 Cabbage Patch Saloon. All Rights Reserved.
+
+    script(src='http://code.jquery.com/jquery-latest.js')
+
+    script(src='js/bootstrap.min.js')
+
+    script(src='js/jquery.countdown.min.js')
+
+    script(src='js/theme.js')
+
+    script(type='text/javascript').
+      $(function () {
+      var currentDate = new Date(),
+      finished = false,
+      availiableExamples = {
+      set35daysFromNow: 35 * 24 * 60 * 60 * 1000,
+      set15daysFromNow: 15 * 24 * 60 * 60 * 1000,
+      set5minFromNow  : 5 * 60 * 1000,
+      set1minFromNow  : 1 * 60 * 1000
+      };
+      function callback(event) {
+      $this = $(this);
+      $this.find('span#'+event.type).html(event.value);
+      switch(event.type) {
+      case "seconds":
+      case "minutes":
+      case "hours":
+      case "days":
+      case "weeks":
+      case "daysLeft":
+      case "finished":
+      }
+      }
+      $('div#clock').countdown(availiableExamples.set15daysFromNow + currentDate.valueOf(), callback);
+      });

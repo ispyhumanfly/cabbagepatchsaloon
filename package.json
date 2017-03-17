@@ -1,0 +1,23 @@
+{
+  "name": "cabbagepatchsaloon",
+  "version": "1.0.0",
+  "description": "The Cabbage Patch Saloon website source code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ispyhumanfly/cabbagepatchsaloon.git"
+  },
+  "author": "Dan Stephenson (ispyhumanfly)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ispyhumanfly/cabbagepatchsaloon/issues"
+  },
+  "homepage": "https://github.com/ispyhumanfly/cabbagepatchsaloon#readme",
+  "dependencies": {
+    "jasmine": "^2.5.3",
+    "typings": "^2.1.0"
+  }
+}
